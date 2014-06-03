@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BB Player - Audio player in Backbone</title>
+  <meta name="description" content="Audio player in Backbone">
+  <meta name="author" content="Khurram Raja">
+  <link rel="shortcut icon" href="../img/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5 maximum-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  
+</head>
+<body>
+<div id="main" class='container'>
+  <h2>Audio player in Backbone</h2>
+<div class="row">
+  <div id="albumView" class="span8">
+    
+  </div>  
+  
+<div id="albumRecordsView" class="span8">
+    
+  </div>
+
+
+  <div id="playerAudio" class="span4">
+    <audio id='player' autoplay='true' controls preload='none' src="" type="audio/mpeg">
+    </audio>
+    
+  <div id="songsCollection">
+   
+    </div>
+  </div>
+
+
+  
+
+  
+</div>
+</div>
+
+<script type="text/html" id="albumsList-template">
+     <div class='prod-list'>
+      <ul id='albumList' class='thumbnails unstyled'>
+       {{#each albums}}
+        <li id="album{{pid}}" data-pid ="{{pid}}" class='cat plan'>
+        <img src = "images/{{image}}"/>
+      <div class="plan-name-bronze">
+            <h2>{{artist}}</h2>
+            <h3>{{title}}</h3>
+            <p>{{years}}</p>
+          </div>
+  
+     </li>
+        {{/each}}
+      </ul>
+      </div>
+ </script>
+
+
+<script type="text/html" id="albumRecords-template">
+      <a href='#' id='gotoHome'><i class="icon-white icon-home"></i> All Albums </a>
+      <a href='#' id='playAll'> <i class="icon-white icon-play"></i> Play All</a>
+      <ul id='songsList' class='thumbnails unstyled'>
+       {{#each records}}
+        <li id="song{{pid}}" data-spid ="{{pid}}" class='cat plan'>
+      <img src = "images/{{image}}"/>
+      <div class="plan-name-bronze">
+            <h2>{{title}}</h2>         
+            <p>{{artist}}</p>
+            <p>{{album}}-{{year}}</p>
+          </div>
+  
+     </li>
+        {{/each}}
+      </ul>
+    
+ </script>
+
+
+
+<script type="text/html" id="playList-template">
+   <a class='song' data-pid="{{pid}}" data-source ="{{media}}" href='#'><img src="images/{{image}}"/> <span>{{title}}</span></a> <a href='#' id='remove'>X</a>   
+</script>
+<script type="text/html" id="subCat-template">
+     <div class='prod-list'>
+      <ul id='subCat' class='thumbnails unstyled'>
+       {{#each products}}
+        <li id="{{productid}}" class='span2 cat plan'>
+
+
+      <div class="plan-name-bronze">
+            <p>{{label}}</p>
+            <img src = "images/{{image}}"/>
+            <p>£{{price}}</p>
+          </div>
+        </li>
+        {{/each}}
+      </ul>
+      </div>
+</script>
+
+ <script type="text/html" id="cart-template">
+      <ul class='unstyled cartList'>
+       {{#each cart}}
+        <li id="{{productid}}">
+         <strong>{{label}}</strong> <br/>
+          <span class="price pull-left"><strong>£{{unit}}</strong> Unit(s) at £{{price}} / Unit(s) </span>
+            <span class='pull-right'><strong>£{{unitPriceTotal}}</strong>
+            <a id='delete' class="btn btn-danger btn-mini" href='#' title='Remove item'><i class="icon-white icon-trash"></i></a>
+            </span>
+             
+            </li>
+            
+        {{/each}}
+      </ul>
+ </script>
+
+ 
+ <script data-main="js/main.js" src="js/vendor/requirejs/require.js"></script>
+
+</body>
+</html>

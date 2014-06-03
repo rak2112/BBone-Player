@@ -1,0 +1,198 @@
+body{
+font-family:"Segoe UI Light", "Helvetica Neue", "Segoe UI", "Segoe WP", sans-serif;
+font-size:16px;
+}
+p{
+    font-size:1.15em;
+}
+#items{ overflow:hidden;padding:15px;}
+a#home{margin-bottom:20px;display:inline-block;}
+.checkOut{margin-top:40px;}
+.cart, #checkOutView {margin-left:5px;border-radius: 5px;
+background-color: #f3f3f3;
+-moz-box-shadow: 0 0 6px 2px #b0b2ab;
+-webkit-box-shadow: 0 0 6px 2px #b0b2ab;
+box-shadow: 0 0 6px 2px #b0b2ab;
+padding:20px;overflow:auto;height:250px;
+	       }
+span.abc{display:inline-block;}
+a#delete{xmargin:12px;xdisplay:block;}
+.cart h2{color:#000;text-align:left;margin:0;}
+.cartTotals{padding:10px 0;overflow:hidden;font-weight:bold;padding-right:10px;}
+.itemList {overflow:hidden;}
+.itemList li{margin-top:5px;overflow:hidden;}
+.itemList li span{margin-left:2px;}
+button#delete{margin-left:5px;}
+.container{background-color:#eaeaea;padding-top:10px;}
+.prods{margin-left:3px;}
+.catg-list h4{padding-left:80px;}
+.keyPad{overflow:hidden;padding-right:30px;margin-top:10px;}
+.keyPad p{padding-left:10px;}
+
+
+.keyPad ul  li {  
+    float: left;  
+    margin: 0 5px 5px 0;  
+    width: 40px;  
+    height: 40px;  
+    line-height: 40px;  
+    text-align: center;  
+    background: #fff;  
+    border: 1px solid #f9f9f9;  
+    -moz-border-radius: 5px;  
+    -webkit-border-radius: 5px;  font-weight:bold;
+    }  
+.keyPad ul  li.cancel{width:88px;}   
+.keyPad ul{overflow:hidden;list-style:none;width:200px;padding:10px;margin:0;}
+.keyPad ul li:hover, a#payNow:hover, a#homeRoute:hover{
+	background-color: #665D1E;
+	color:#fff;
+-moz-box-shadow: 0 0 12px 3px #b0b2ab;
+-webkit-box-shadow: 0 0 12px 3px #b0b2ab;
+box-shadow: 0 0 8px 3px #b0b2ab;
+}
+
+a#payNow{margin-top:53px;background: #fff; width:150px;xheight:40px;text-align:center;
+	  text-decoration:none; 
+	  padding:10px;
+    border: 1px solid #f9f9f9;  
+    -moz-border-radius: 5px;  
+    -webkit-border-radius: 5px;  }
+a#payNow:hover{
+
+}
+
+    #checkOutView{margin-top:40px;height:290px;padding:10px 20px;}
+     #checkOutView input{margin-left:180px;}
+    #checkOutView #totalAmount{font-weight:bold;}
+    #checkOutView h2, #checkOutView p, #checkOutView span{color:#000;font-weight:bold;}
+    #checkOutView span{margin-right:25%;}
+    #checkOutView p.amounts{display:none;}
+    a#homeRoute{background: #fff;  
+    border: 1px solid #f9f9f9;  
+    -moz-border-radius: 5px; border:1px solid #0088cc;
+    -webkit-border-radius: 5px;  font-weight:bold;color:#0088cc;text-decoration:none;padding:4px 7px;display:block;width:103px; }
+      
+
+#main{width:100%;background:#242424;}
+
+.catg-list ul li{height:250px;}
+.catg-list ul li img{height:125px;} 
+.prod-list ul#items li{height:150px;}
+.prod-list ul li img, #songsList li img{height:138px;width:88%;padding:10px;}
+h2{color:#fff; font-size:1.35em;
+                       font-weight:200;text-align:center;
+	                   }
+
+.prod-list li h2, #songsList li h2{
+    font: 18px/1 'PT Sans Narrow', Helvetica, Arial, sans-serif;
+color: #ededed;
+text-transform: uppercase;
+xwidth: 176px;
+height: 21px;
+margin:0;
+text-align:center;
+    }  
+.prod-list li h3, #songsList li h3{
+    font-size: 15px;
+color: #999;
+margin: 0;
+padding: 0;
+height: 24px;
+line-height: 21px;
+}         
+.prod-list li p, #songsList li p{
+font: 14px /1.2 'PT Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+color: #999;
+xwidth: 200px;
+height: 18px;
+overflow: hidden;
+white-space: nowrap;
+text-overflow: ellipsis;
+-o-text-overflow: ellipsis;
+}                
+
+.plan{border-radius: 5px;
+text-align: center;
+background-color: #f3f3f3;
+-moz-box-shadow: 0 0 6px 2px #b0b2ab;
+-webkit-box-shadow: 0 0 6px 2px #b0b2ab;
+box-shadow: 0 0 6px 2px #b0b2ab;
+padding:20px;
+opacity:0.7;
+}
+.prod-list .plan, #songsList .plan{padding:0; height:230px;width:288px;background:#000;}
+#songsList{margin-top:20px;}
+.plan:hover{
+	background-color: #000;
+-moz-box-shadow: 0 0 12px 3px #b0b2ab;
+-webkit-box-shadow: 0 0 12px 3px #b0b2ab;
+box-shadow: 0 0 12px 3px #b0b2ab;
+}
+.plan:hover{opacity:1.0;}
+
+.plan-name-bronze{
+color: #fff;
+background-color: #665D1E;
+-moz-border-radius: 5px 5px 0 0;
+-webkit-border-radius: 5px 5px 0 0;
+border-radius: 5px 5px 0 0;
+}
+.prod-list .plan-name-bronze, #songsList .plan-name-bronze{background:none;color:#000;}
+
+.plan ul {
+list-style: none;
+margin: 0;
+-moz-border-radius: 0 0 5px 5px;
+-webkit-border-radius: 0 0 5px 5px;
+border-radius: 0 0 5px 5px;}
+/*.plan ul li.plan-feature {
+padding: 15px 10px;
+border-top: 1px solid #c5c8c0;
+}*/
+#albumRecordsView{display:none;}
+#playerAudio{float:left;width:400px;xdisplay:none;}
+#albumRecords, #albumView {float:left;xwidth:900px;}
+#songsCollection ul li{background:#000;padding:4px 2px;margin:2px 0;overflow:hidden;}
+#songsCollection ul li.selected{background:#4F2F4F;color:#000;}
+#songsCollection ul li:hover{background:#4F2F4F;}
+#songsCollection ul li:hover a.song{color:#fff;text-decoration:none;}
+#songsCollection ul li.selected a{color:#fff;}
+#songsCollection ul{margin:0;list-style:none;}
+#songsCollection ul li img{width:70px;height:50px;margin-right:36px;margin-left:10px;float:left;}
+#songsCollection a.song{float:left;xpadding-top:14px;width:90%;}
+#songsCollection ul li span{display:block;padding-top:14px;background:url('../images/audio.png') no-repeat 27% 86%;}
+#songsCollection a#remove{float:right;padding-top:14px;padding-right:20px;}
+#player{width:400px;}
+@media (max-width: 767px){
+    body{
+        padding:0;
+    }
+    .prod-list .plan{
+        margin:20px auto;
+        width:90%;
+    }
+    #albumRecords, #albumView{
+        width:100%;
+    }
+    #playerAudio{width:100%;}
+    audio{
+        margin:0 0 20px;
+    }
+    #player{width:100%;}
+}
+#albumRecords #gotoHome, #albumRecords #playAll{margin:30px;}
+#albumRecords #gotoHome:hover, #albumRecords #playAll:hover{text-decoration:none;color:#4F2F4F;}
+@media (min-width:768px) and (max-width:979px){
+    .span8{
+        width:320px;
+    }
+
+}
+
+@media (min-width:320px) and (max-width:768px){
+    #songsList{margin:20px;}
+    #songsList .plan{width:100%;}
+    #songsCollection ul li span{background-position:89px 86%;}
+    #songsCollection{margin-bottom:80px;}
+}
